@@ -1,2 +1,10 @@
 Name: Ludmyla Almeida
 Email: ludmyla_almeida@student.uml.edu
+Assignment: A bit of Scrabble with drag-and-drop using jQuery UI
+
+I implemented the assignment with a full board, but I was not able to check if the words were valid. I also designed the tiles, 
+I was looking for a specific look for this assignment, I will probably finish the design later on. I successfully implemented 
+tile drag and drop, counting for how many letters are remaining/left, a score count, a button to reset the game, to switch the letters
+and to clear the game board. Features that I did not implement: I did not make the scrabble follow the rules, by starting in the 
+middle and etc. I also did not check if the word as valid. I also have a few bugs that I was not able to fix. Overall I'm proud
+of this assignment and will probably work on improvements in the future.
