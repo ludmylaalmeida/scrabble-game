@@ -1,0 +1,80 @@
+<!--
+ Assignment 9: Implementing a Bit of Scrabble with Drag-and-Drop
+ File: index.html
+ Ludmyla Almeida, UMass Lowell Computer Science, ludmyla_almeida@student.uml.edu
+ Copyright (c) 2019 by Ludmyla Almeida. All rights reserved. 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Website title -->
+    <title>Scrabble</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- jquery UI css -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/daf3caf8e4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            Scrabble by Ludmyla Almeida
+        </a>
+        <div class="ml-auto">
+            <a class="btn btn-outline my-2 my-sm-0" href="https://ludmylaalmeida.github.io/resume/"
+                target="_blank">Resume</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2 class="mt-5">Score: <span id="score"></span></h2>
+        <div class="float-right mt-4 ml-5">
+
+            <!-- How many tiles do I still have left? -->
+            <div id="tilesLeft" class="text-center"></div>
+
+            <!-- buttons -->
+            <div class="mt-3">
+                <button id="resetScrabbleGame" class="btn btn-default" type="submit">Reset Game</button>
+                <button id="switchLetters" class="btn btn-default" type="submit">Switch Letters</button>
+                <button id="putLetterBackOnRack" class="btn btn-default" type="submit">Put Tile Back</button>
+                <button id="clearScrabbleBoard" class="btn btn-default" type="submit">Clear Board</button>
+            </div>
+
+            <!-- letters on rack -->
+            <div id="rackOfLetters" class="img-fluid mt-3 justify-content-center"></div>
+            <!-- submit the word-->
+            <button id="submit" class="btn btn-warning btn-lg mt-2" type="submit">Submit</button>
+            <div class="invalid-feedback mt-3"></div>
+        </div>
+
+        <!-- scrabble board section -->
+        
+            <div class="scrabble"></div>
+            <div id="boardGame"></div>
+        
+    </div>
+
+    <!-- jquery minified -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jquery ui -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- pieces -->
+    <script src="js/pieces.js"></script>
+    <!-- main js file - this file creates the board game and adds the functionality-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
